@@ -1,0 +1,24 @@
+﻿@model IEnumerable<CrudUI.Models.Products>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <td>ProdName</td>
+            <td>Category</td>
+            <td>UnitPrice</td>
+            <td>StockQty</td>
+            <td>Edit & Delete</td>
+        </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+</table>
+ 
